@@ -10,19 +10,19 @@ class Counter extends Component {
 
   render() {
     const increment = () => {
-      this.setState({ count: this.state.count + 1 })
+      this.setState({ count: prevState.count + 1 })
     }
     const decrement = () => {
-      this.setState({ count: this.state.count - 1 })
+      this.setState({ count: prevState.count - 1 })
     }
 
     return (
         <div className="counterContainer">
-            <Button click={increment} className='standardButton' iconClassName='icon-angle-up' />
+            <Button onClick={increment} className="standardButton" iconClassName="icon-angle-up" />
             <p className="counterNumber">
                 {this.state.count}
             </p>
-            <Button click={decrement} className='standardButton' iconClassName='icon-angle-down' />
+            <Button onClick={decrement} className="standardButton" iconClassName="icon-angle-down" />
         </div>
     )
   }
