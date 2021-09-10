@@ -1,0 +1,12 @@
+.counterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counterNumber{
+    font-family: 'Roboto', sans-serif;
+    font-size: 96px;
+    color: #fff;
+    margin: 0;
+}
